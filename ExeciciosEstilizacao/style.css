@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+body{
+    background-color: black;
+
+    /* Imagem n vai sair do body
+    Faz com que os elementos filhos se ajustem de acordo com o tamanho do elemento pai */
+    box-sizing: border-box;
+
+    height: 100vh;
+    /* altura = 100vh = porção de área visível da tela */
+
+    width: 100%;
+    /* largura = 100% da tela */
+
+    margin: 10px;
+
+}
+
+.tittle{
+    color:lightpink;
+    text-align: center;/*centraliza o texto*/
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    padding: 2px;
+    margin: 15px;
+}
+
+p{
+    color: #ffffff;
+    text-align: justify; /* Justifica o texto */
+    padding: 2px;
+    margin: 0 50px;
+}
+
+.subtittle{
+    color:lightpink;
+    text-align: center;/*centraliza o texto*/
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.redesSociais{
+    display: flex; /*Ativa o flexbox*/
+    flex-direction: column; /*Dispoe os elementos um em baixo do outro*/
+    align-items: center; /*Centraliza td*/
+    gap: 32px; /* espaçamento entre cada elemento */
+    margin: 15px;
+    padding: 2px;
+}
+
+.botao{
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid lightpink;
+    padding: 8px;;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+}
+
+.botao:hover{ /* Quando passar o mouse */
+
+    color: lightpink;
+    
+    border: 2px solid #ffffff;
+
+    transform: scale(1.2); /* aumenta-se a escala */
+}
+
+img{
+    height: 900px;
+    width: 907px;
+    object-fit:cover;
+    /* Padroniza a imagem pra ela n ficar bugada, como?? */
+    margin: auto;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /*Dispoe os elementos um em baixo do outro*/
+    gap: 10px;
+    margin: 15px;
+    padding: 2px;
+}
