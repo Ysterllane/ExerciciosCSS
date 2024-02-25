@@ -4,7 +4,32 @@
     margin: 0;
     padding: 0;
 }
-    
+ 
+.cabecalho{
+    background-color:lightpink;
+    text-align: center;
+    padding: 16px;
+    display: flex ;/*necessário pra funcinar o gap*/
+    align-items: center;
+}
+
+.cabecalho__menu{
+    display: flex ;/*necessário pra funcinar o gap*/
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+    padding: 0% 37%;
+}
+
+.cabecalho__menu__links{
+    color:#000000;
+    text-decoration: none;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
 body{
     background-color: black;
 
