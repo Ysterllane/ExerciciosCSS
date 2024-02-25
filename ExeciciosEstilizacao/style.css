@@ -11,15 +11,6 @@ body{
     /* Imagem n vai sair do body
     Faz com que os elementos filhos se ajustem de acordo com o tamanho do elemento pai */
     box-sizing: border-box;
-
-    height: 100vh;
-    /* altura = 100vh = porção de área visível da tela */
-
-    width: 100%;
-    /* largura = 100% da tela */
-
-    margin: 10px;
-
 }
 
 .tittle{
@@ -31,11 +22,13 @@ body{
     margin: 15px;
 }
 
-p{
+.conteudo{
     color: #ffffff;
     text-align: justify; /* Justifica o texto */
     padding: 2px;
     margin: 0 50px;
+    font-family: 'Comic sans', sans-serif;
+    font-size: 16px;
 }
 
 .subtittle{
@@ -66,6 +59,8 @@ p{
     display: flex;
     justify-content: center;
     gap: 10px;
+    font-family: 'Comic sans', sans-serif;
+    font-size: 16px;
 }
 
 .botao:hover{ /* Quando passar o mouse */
@@ -96,4 +91,14 @@ p{
     gap: 10px;
     margin: 15px;
     padding: 2px;
+}
+
+footer{
+    background-color:lightpink;
+    color:#000000;
+    text-align: center;
+    padding: 16px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
 }

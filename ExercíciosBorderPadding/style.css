@@ -11,6 +11,11 @@
     padding: 4px;
 }
 
+.texto-destaque:hover{
+    color:blueviolet;
+    transform: scale(1.2);
+}
+
 body{
     background: black;
 }
