@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
+/*variaveis globais css */
+:root{ 
+    --cor-primaria:#000000;
+    --cor-secundaria: lightpink;
+    --cor-terciaria: #ffffff;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
  
 .cabecalho{
-    background-color:lightpink;
+    background-color:var(--cor-secundaria);
     text-align: center;
     padding: 16px;
     display: flex ;/*necessário pra funcinar o gap*/
@@ -22,16 +29,15 @@
 }
 
 .cabecalho__menu__links{
-    color:#000000;
+    color:var(--cor-primaria);
     text-decoration: none;
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
-
 body{
-    background-color: black;
+    background-color: var(--cor-primaria);
 
     /* Imagem n vai sair do body
     Faz com que os elementos filhos se ajustem de acordo com o tamanho do elemento pai */
@@ -39,7 +45,7 @@ body{
 }
 
 .tittle{
-    color:lightpink;
+    color:var(--cor-secundaria);
     text-align: center;/*centraliza o texto*/
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
@@ -48,20 +54,20 @@ body{
 }
 
 .conteudo{
-    color: #ffffff;
+    color: var(--cor-terciaria);
     text-align: justify; /* Justifica o texto */
     padding: 2px;
     margin: 0 50px;
     font-family: 'Comic sans', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .subtittle{
-    color:lightpink;
+    color:var(--cor-secundaria);
     text-align: center;/*centraliza o texto*/
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .redesSociais{
@@ -74,7 +80,7 @@ body{
 }
 
 .botao{
-    color: #ffffff;
+    color: var(--cor-terciaria);
     text-decoration: none;
     border: 2px solid lightpink;
     padding: 8px;;
@@ -85,15 +91,13 @@ body{
     justify-content: center;
     gap: 10px;
     font-family: 'Comic sans', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .botao:hover{ /* Quando passar o mouse */
 
-    color: lightpink;
-    
+    color:var(--cor-secundaria);
     border: 2px solid #ffffff;
-
     transform: scale(1.2); /* aumenta-se a escala */
 }
 
@@ -102,8 +106,7 @@ body{
 }
 
 .luisaImg{
-    height: 900px;
-    width: 907px;
+    width: 93%;
     object-fit:cover;
     /* Padroniza a imagem pra ela n ficar bugada, como?? */
     margin: auto;
@@ -119,11 +122,14 @@ body{
 }
 
 footer{
-    background-color:lightpink;
-    color:#000000;
+    background-color:var(--cor-secundaria);
+    color:var(--cor-primaria);
     text-align: center;
     padding: 16px;
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
+
+/* 13px = 0.8125rem
+   16px = 1 rem */
